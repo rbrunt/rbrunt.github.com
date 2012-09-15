@@ -17,19 +17,15 @@
 				margin: 0 auto;
 				padding-top: 20%;
 				text-shadow: 0px 2px 3px #000;
-				-moz-transition: all 0.5s;
 			}
 			h1:hover {
 				color: rgb(10, 165, 70);				
-				-moz-transition: all 0.5s;
 			}
 			h1>span {
 				color: rgb(70, 165, 70);
-				-moz-transition: all 0.5s;
 			}
 			h1>span:hover {
 				color: rgb(4, 156, 219);
-				-moz-transition: all 0.5s;
 			}
 			footer {			
 				font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -42,10 +38,16 @@
 				margin: none;
 				padding: none;
 			}
+			.transition {
+				transition: all 0.7s;
+				-moz-transition: all 0.7s;
+				-webkit-transition: all 0.7s;
+				-o-transition: all 0.7s;
+			}
 		</style>
 	</head>
 	<body>
-		<h1>richard<wbr/><span>brunt</span></h1>
+		<h1 class="transition">richard<wbr/><span class="transition">brunt</span></h1>
 		<footer><p>Copyright &copy; 2012 Richard Brunt. All rights reserved.<p>
 	</body>
 </html>
