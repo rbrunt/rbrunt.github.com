@@ -2,25 +2,50 @@
 <html>
 	<head>
 		<title>richardbrunt.co.uk coming soon</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			body {
-				background: url("office.png");
+				background: #000 url('office.png');
 				background-repeat: repeat;
+				margin: 0;
+				text-align:center;
 			}
 			h1 {
 				color: rgb(4, 156, 219);
-				font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-				text-align: center;
+				font-family: Ubuntu, sans-serif;
 				font-size:80px;
 				margin: 0 auto;
 				padding-top: 20%;
+				text-shadow: 0px 2px 3px #000;
+				-moz-transition: all 0.5s;
 			}
-			h1 span {
+			h1:hover {
+				color: rgb(10, 165, 70);				
+				-moz-transition: all 0.5s;
+			}
+			h1>span {
 				color: rgb(70, 165, 70);
+				-moz-transition: all 0.5s;
+			}
+			h1>span:hover {
+				color: rgb(4, 156, 219);
+				-moz-transition: all 0.5s;
+			}
+			footer {			
+				font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+				font-size: 10px;
+				color: #555;
+				
+				position:absolute;
+				width:100%;					
+				bottom:0px;
+				margin: none;
+				padding: none;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>richard<span>brunt</span></h1>
+		<h1>richard<wbr/><span>brunt</span></h1>
+		<footer><p>Copyright &copy; 2012 Richard Brunt. All rights reserved.<p>
 	</body>
 </html>
