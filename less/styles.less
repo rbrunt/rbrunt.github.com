@@ -1,0 +1,122 @@
+@blue: rgb(4, 156, 219);
+@green: rgb(70, 165, 70);
+@grey: #444;
+
+.transition (@duration: 0.7s, @delay: 0.3s) {
+	transition: all @duration @delay;
+}
+
+.fade{
+	.transition(0.3s, 0.1s);
+}
+
+
+body {
+	background: #000 url('../res/img/office.png');
+	background-repeat: repeat;
+	margin: 0;
+	text-align:center;
+	font-family: Ubuntu, sans-serif;
+	min-height:100%;
+}
+
+footer {			
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 10px;
+	color: @grey;
+	position:absolute;
+	width:100%;					
+	bottom:0px;
+}
+.grey {
+	color: @grey;
+}
+
+.green {
+	color: @green;
+}
+
+.blue {
+	color:@blue;
+}
+.greyhover:hover {
+	color: @grey;
+}
+
+.greenhover:hover {
+	color: @green;
+}
+
+.bluehover:hover {
+	color:@blue;
+}
+
+
+header {
+	.transition(0.5s, 0.1s);
+	border-bottom:solid 3px @blue;
+	position: fixed;
+	top:-25px;
+	height:25px;
+	padding-top:25px;
+	width:100%;
+	background: #fff url('../res/img/office_light.png');
+	background-repeat: repeat;
+	box-shadow: 0 0 2px 3px #000;
+	line-height: 25px;
+	color:@grey;
+	font-size:15px;
+	font-weight:300;
+	&:hover{
+		border-bottom-color: @green;
+		top:0;
+	}
+}
+
+
+h1 {
+	&#herotext {
+		color: @blue;
+		font-size:80px;
+		margin: 0 auto;
+		margin-top: 20%;
+		text-shadow: 0px 2px 3px #000;
+		font-weight:700;
+	}
+
+	&#sitetitle {
+		margin:0 auto;
+		font-size:inherit;
+		font-weight: 400;
+	}
+}
+
+nav{
+	ul{
+		list-style-type: none;
+		margin:0;
+		position:absolute;
+		top:0px;
+		left:0px;
+		li{
+			float:left;
+			margin: 0;
+			margin-right:10px;
+		}
+	}
+}
+
+
+a{	
+	.transition(0.3s, 0.1s);
+	text-decoration: none;
+	color:inherit;
+	&:visited{
+		color:@grey;
+	}
+	&:hover{
+		color:@blue;
+		border-bottom:1px dotted @blue;
+	}
+}
+
