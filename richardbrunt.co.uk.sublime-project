@@ -1,0 +1,10 @@
+{
+	"url": "http://localhost:8080",
+	"folders":
+	[
+		{
+			"path": "/C/Users/Richard/GIT/rbrunt.github.com",
+			"file_exclude_patterns": ["*.png"]
+		}
+	]
+}

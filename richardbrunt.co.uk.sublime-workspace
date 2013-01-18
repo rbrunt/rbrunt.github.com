@@ -1,0 +1,672 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lorem",
+				"lorem	lorem - Medium paragraph"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"list-styl",
+				"list-style-type"
+			],
+			[
+				"grayDark",
+				"grayDark"
+			],
+			[
+				"mysql_ar",
+				"mysql_fetch_array"
+			],
+			[
+				"prefcurrency",
+				"prefcurrency"
+			],
+			[
+				"number",
+				"number"
+			],
+			[
+				"valida",
+				"validationkey"
+			],
+			[
+				"mysql_err",
+				"mysql_error"
+			],
+			[
+				"border",
+				"border	border-width: size"
+			],
+			[
+				"tre",
+				"true"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "post.html",
+			"settings":
+			{
+				"buffer_size": 8047,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "less/styles.less",
+			"settings":
+			{
+				"buffer_size": 4310,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"manag",
+				"Fetch: Manage"
+			],
+			[
+				"cdn",
+				"Cdnjs: Import Script"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"med",
+				"Snippet: inline-media-query"
+			],
+			[
+				"snippetmedia",
+				"Snippet: inline-media-query"
+			],
+			[
+				"opebn",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"open",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"edit",
+				"Project: Edit"
+			],
+			[
+				"subli",
+				"SublimeServer: Start SublimeServer"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"gith",
+				"Github: Open File"
+			],
+			[
+				"github",
+				"Github: Open File"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"projesa",
+				"Project: Save As"
+			],
+			[
+				"pr",
+				"Project: Edit"
+			],
+			[
+				"proe",
+				"Project: Edit"
+			],
+			[
+				"subl",
+				"SublimeServer: Start SublimeServer"
+			],
+			[
+				"open in",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"placeholder",
+				"Snippet: form - Placeholder"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"prefixr",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syntax les",
+				"Set Syntax: LESS"
+			],
+			[
+				"sublime",
+				"SublimeServer: Start SublimeServer"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rev",
+				"File: Revert"
+			],
+			[
+				"rever",
+				"File: Revert"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"bracket Highlighter: ",
+				"Bracket Highlighter: Match Brackets"
+			],
+			[
+				"git d",
+				"Git: Diff All"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: List Packages"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"spippen",
+				"Snippet: <?php if (…) ?> … <?php endif ?>"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"alim",
+				"Preferences: Alignment File Settings – Syntax Specific – User"
+			],
+			[
+				"aligmen",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"alignment",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"alignm",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"snippet: h",
+				"Snippet: color: hex"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Richard/GIT/rbrunt.github.com/index.html",
+		"/C/Users/Richard/GIT/rbrunt.github.com/richardbrunt.co.uk.sublime-project",
+		"/C/Users/Richard/GIT/rbrunt.github.com/less/oldstyle.less",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Richard/GIT/rbrunt.github.com/less/styles.less",
+		"/C/Users/Richard/GIT/rbrunt.github.com/post.html",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/Users/Richard/GIT/rbrunt.github.com/less/normalize.less",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/CSS/inline-media-query.sublime-snippet",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/HTML/meta-viewport.sublime-snippet",
+		"/C/Users/Richard/GIT/rbrunt.github.com/richardbrunt.co.uk.sublime-workspace",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/Richard/GIT/rbrunt.github.com/post_oldstyle.html",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/github_blame.pyc",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/github_open.py",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/github_open.pyc",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/LICENSE",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/package-metadata.json",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/README.md",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/VERSION",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/.gitignore",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/Default.sublime-commands",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/github.py",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/github.pyc",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Github Tools/github_blame.py",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/build/php-lint.sublime-build",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/C/Users/Richard/GIT/rbrunt.github.com/sitemap.txt",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-menu",
+		"/C/Users/Richard/GIT/rbrunt.github.com/README.md",
+		"/C/Users/Richard/GIT/rbrunt.github.com/css/styles.css",
+		"/C/Users/Richard/GIT/rbrunt.github.com/404.html",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/HTML/js-source.sublime-snippet",
+		"/C/Users/Richard/GIT/rbrunt.github.com/js/jquery.js",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Prefixr/Default (Windows).sublime-keymap",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Richard/Dropbox/simple http server here shell extension.reg",
+		"/C/Users/Richard/Dropbox/open folder in sublime shell extension.reg",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/SublimeServer.sublime-settings",
+		"/C/Users/Richard/GIT/rbrunt.github.com/apple-touch-icon-precomposed.png",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/index.html",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/README.md",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/Standalone/less/main.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/Standalone/less/variables.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/Standalone/less/normalise.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/Standalone/index.html",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/bootstrap.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/variables.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/utilities.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/responsive.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/type.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/close.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/component-animations.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/mixins.less",
+		"/C/Users/Richard/Desktop/richardbrunt.co.uk/less/responsive-utilities.less",
+		"/C/Users/Richard/Desktop/Day1_Session1.osd",
+		"/C/Users/Richard/GIT/nikon-remote-pi/ml-l3.py",
+		"/C/Users/Richard/GIT/nikon-remote-pi/README.md",
+		"/C/Users/Richard/Sublime Text 2/nikon-remote-pi.sublime-project",
+		"/C/Users/Richard/GIT/Financial-Management-App/iforgot.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/register.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/js/functions.js",
+		"/C/Users/Richard/GIT/Financial-Management-App/accounts.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/doregister.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/header.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/resendvalidationkey.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/doresendvalidationkey.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/functions.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/changepassword.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/css/test.css",
+		"/C/Users/Richard/GIT/Financial-Management-App/index.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/registrationform.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/dbconstants.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/doresetpassword.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/sendpasswordreset.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/validate.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/resetpassword.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/xmlhttp/doedit.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/xmlhttp/updatecurrency.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/xmlhttp/addaccount.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/updatecurrency.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/addpayment.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/statement.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/less/style.less",
+		"/C/Users/Richard/GIT/Financial-Management-App/css/style.css",
+		"/C/Users/Richard/GIT/Financial-Management-App/style.css",
+		"/C/Users/Richard/GIT/Financial-Management-App/database.sql",
+		"/C/Users/Richard/GIT/Financial-Management-App/logout.php",
+		"/C/Users/Richard/GIT/Financial-Management-App/dologin.php",
+		"/C/xampp/php/php.ini",
+		"/C/Users/Richard/GIT/Financial-Management-App/README.md",
+		"/C/Users/Richard/GIT/Financial-Management-App/.gitignore",
+		"/C/Users/Richard/GIT/rbrunt.github.com/README",
+		"/C/xampp/htdocs/blue-shift.net/.htaccess",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Richard/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/blue-shift.net/blu-shift.net.sublime-project",
+		"/C/xampp/htdocs/blue-shift.net/blu-shift.net.sublime-workspace",
+		"/C/xampp/htdocs/blue-shift.net/res/script/jquery.js"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"				}",
+			"attachment",
+			"ul {",
+			"uk {",
+			"ul",
+			";\n",
+			"font-family",
+			"http://raw",
+			"file_exclude_pattern",
+			"office_light",
+			"Ubuntu",
+			"\n",
+			"transition",
+			"background",
+			"OUT",
+			"pin",
+			"PIN",
+			"email",
+			"form",
+			"All fields are required",
+			"all the fields must be a ",
+			"Your passsword is too short! ",
+			"	-moz-transition-delay: 0.5s, 0s;",
+			"	-webkit-transition-duration: 0.5s, 0.5s;",
+			"dealy",
+			"div",
+			"screen",
+			"width"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "post.html",
+					"settings":
+					{
+						"buffer_size": 8047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "less/styles.less",
+					"settings":
+					{
+						"buffer_size": 4310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3566,
+								3566
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4680.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.456386292835,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"nom",
+				"less/normalize.less"
+			],
+			[
+				"oldles",
+				"less/oldstyle.less"
+			],
+			[
+				"functions",
+				"functions.php"
+			],
+			[
+				"fuc",
+				"functions.php"
+			],
+			[
+				"funci",
+				"functions.php"
+			],
+			[
+				"register",
+				"register.php"
+			],
+			[
+				"doreg",
+				"doregister.php"
+			],
+			[
+				"doregister",
+				"doregister.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"change",
+				"changepassword.php"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"mo",
+				"res/style/mobile.css"
+			],
+			[
+				"inde",
+				"index.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"pit",
+				"/C/Users/Richard/Sublime Text 2/PiTunes.sublime-project"
+			],
+			[
+				"rbrunt",
+				"/C/Users/Richard/Sublime Text 2/rbrunt.github.com"
+			],
+			[
+				"",
+				"/C/Users/Richard/Sublime Text 2/nikon-remote-pi.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true
+}

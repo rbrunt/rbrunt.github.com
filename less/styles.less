@@ -1,33 +1,129 @@
+@import "normalize.less";
+
 @blue: rgb(4, 156, 219);
 @green: rgb(70, 165, 70);
+@orange: #F30;
 @grey: #444;
+@titlefont: Ubuntu, Helvetica, Arial, sans-serif;
+@mainfont: "Open Sans", Helvetica, Arial, sans-serif;
 
 .transition (@duration: 0.7s, @delay: 0.3s) {
+	-webkit-transition: all @duration @delay;
+	-moz-transition: all @duration @delay;
+	-o-transition: all @duration @delay;
+	-ms-transition: all @duration @delay;
 	transition: all @duration @delay;
 }
 
 .fade{
-	.transition(0.3s, 0.1s);
+	// .transition(0.3s, 0.1s);
+}
+
+html{
+	font-family: @mainfont;
+	font-size:18px;
+	color:#aaa;
 }
 
 
-body {
+body
+ {
 	background: #000 url('../res/img/office.png');
 	background-repeat: repeat;
-	margin: 0;
-	text-align:center;
-	font-family: Ubuntu, sans-serif;
-	min-height:100%;
+	// background-attachment: fixed;
 }
 
-/*footer {			
-	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 10px;
+
+
+#container {
+	width:100%;
+	margin:0;
+	
+}
+
+#content {
+		margin:0 auto;
+		padding:0 5px;
+		padding-bottom:25px;
+	/*	p {
+		color:#aaa;
+		font-family:@mainfont;
+		font-size:15px;
+	}*/
+}
+
+
+footer {			
+	font-family:@mainfont;
+	font-size: 0.66em;
 	color: @grey;
-	position:absolute;
+	/*position:fixed;*/
 	width:100%;					
 	bottom:0px;
-}*/
+	text-align: center;
+	p {
+		margin-top:0;
+	}
+}
+
+a{	
+	text-decoration: none;
+	color:@green;
+	&:hover{
+		border-bottom:1px dotted;
+	}
+	.transition(0.3s, 0.1s);
+	// &:visited{
+	// 	color:inherit;
+	// }
+	&:hover{
+		color:@blue;
+	 	border-bottom:1px dotted;
+	}
+}
+
+h1, h2, h3, h4 {
+	font-family: @titlefont;
+	color:@blue;
+}
+
+h1 {
+	// margin-left:-40px;
+	// padding-left:40px;
+	// margin-right:-40px;
+	// padding-right:40px;
+	// padding-bottom:5px;
+	// border-bottom:1px dotted #888;
+
+	&#herotext {
+		font-size:80px;
+		margin: 0 auto;
+		margin-top: 20%;
+		text-shadow: 0px 2px 3px #000;
+		font-weight:700;
+		text-align:center;
+		padding:0;
+		border:none;
+	}
+
+	&#sitetitle {
+		
+		color:@grey;
+		margin:0 auto;
+		// margin-bottom:1.66em;
+		padding:0;
+		border:none;
+		font-size:inherit;
+		font-weight: 400;
+		text-align:center;
+		border-bottom: 2px solid @green;
+	}
+}
+
+strong{
+	font-weight:normal;
+	color:lighten(@grey,10%);
+}
 .grey {
 	color: @grey;
 }
@@ -51,84 +147,151 @@ body {
 	color:@blue;
 }
 
-
 header {
-	.transition(0.5s, 0.1s);
 	border-bottom:solid 3px @blue;
-	position: fixed;
-	top:-25px;
-	height:25px;
-	padding-top:25px;
+	// position: absolute;
+	top:0;
 	width:100%;
-	background: #fff url('../res/img/office_light.png');
+	background: #ddd url('../res/img/office_light.png');
+	// background: rgba(231,231,231,0.9); // This replaces it with a semi-transparent bg
 	background-repeat: repeat;
-	box-shadow: 0 0 2px 3px #000;
-	line-height: 25px;
+	//box-shadow: 0 0 2px 3px #000;
+	line-height: 1.66em;
 	color:@grey;
-	font-size:15px;
+	font-size:1.5em;
 	font-weight:300;
-	&:hover{
-		border-bottom-color: @green;
-		top:0;
-	}
-}
-
-
-h1 {
-	&#herotext {
-		color: @blue;
-		font-size:80px;
-		margin: 0 auto;
-		margin-top: 20%;
-		text-shadow: 0px 2px 3px #000;
-		font-weight:700;
-	}
-
-	&#sitetitle {
-		margin:0 auto;
-		font-size:inherit;
-		font-weight: 400;
-	}
+	// .transition(0.5s, 0.1s);
+	// &:hover{
+	// 	border-bottom-color: @green;
+	//	background: rgb(231,231,231);
+	// 	top:0;
+	// }
 }
 
 nav{
+	width:100%;
+	text-align: center;
+	a{
+		font-family:@titlefont;
+		border-bottom:none;
+		color:inherit;
+		&:hover{border:none;}
+	}
 	ul{
+		width:100%;
 		list-style-type: none;
 		margin:0;
-		position:absolute;
-		top:0px;
-		left:0px;
+		padding: 0;
+		// position:absolute;
+		// top:0px;
+		// left:0px;
 		li{
-			float:left;
-			margin: 0;
-			margin-right:10px;
+			// float:left;
+			// margin: 0;
+			// margin-right:auto;
+			padding: 0;
+			&:hover{
+			background:@green;
+			background-clip:padding-box;
+			}
+			a{
+				display:block;
+				height:100%;
+				&:hover{
+					color:inherit;
+				}
+			}
 		}
 	}
 }
 
+@media only screen and (min-width: 480px) {
+	nav{
+		
+		ul{
+			li{
+				.transition(0.3s, 0.1s);
+				display: inline;
+				a{
+					display:inline;
+					padding:0 5%;
+					&:hover{
+						color:inherit;
+					}
+				}
+			}
+		}
+	}
 
-a{	
-	.transition(0.3s, 0.1s);
-	text-decoration: none;
-	color:inherit;
-	&:visited{
-		color:@grey;
-	}
-	&:hover{
-		color:@blue;
-		border-bottom:1px dotted @blue;
-	}
+	h1 {
+		margin-left:-40px;
+		padding-left:40px;
+		margin-right:-40px;
+		padding-right:40px;
+		padding-bottom:10px;
+		border-bottom:1px dotted #888;
 }
 
-#content {
-	min-height:400px;
+
 }
 
+@media only screen and (min-width: 768px) {
+	html{
+		font-size:15px; // for desktops
+	}
+	body{
+		background-attachment: fixed;
+	}
+	#content {
+		max-width:840px;
+		padding:0;
+		padding-top:1.5em;
+	}
+	header {
+		font-size:1em;
+		position: fixed;
+		top:0px;
+		background: rgba(231,231,231,0.9); // This replaces it with a semi-transparent bg
+		box-shadow: 0 0 2px 3px #000;
+		.transition(0.5s, 0.1s);
+		&:hover{
+			border-bottom-color: @green;
+			background: rgb(231,231,231);
+		}
+	}
+	h1{
+		&#sitetitle{
+			border:none;
+		}
+	}
+
+	nav{
+		ul{	
+			position:absolute;
+			top:0;
+			left:0;
+			margin-left:40px;
+			li{
+				float:left;
+				margin:0;
+				margin-right:10px;
+				
 
 
-footer {
-	height:100px;
-	background:#000 url(https://raw.github.com/subtlepatterns/SubtlePatterns/master/low_contrast_linen.png);
-	background-repeat: repeat;
-	border-top: solid 3px #333;
+				&:hover{
+					background:inherit;
+				}
+				
+
+				a{
+
+					border-bottom:none;
+					display:block;
+					height:100%;
+					&:hover{color:@blue;}
+
+				}
+			}
+		}
+	}
 }

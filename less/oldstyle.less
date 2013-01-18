@@ -1,0 +1,180 @@
+@import "normalize.less";
+
+@blue: rgb(4, 156, 219);
+@green: rgb(70, 165, 70);
+@grey: #444;
+@titlefont: Ubuntu, Helvetica, Arial, sans-serif;
+@mainfont: "Open Sans", Helvetica, Arial, sans-serif;
+
+.transition (@duration: 0.7s, @delay: 0.3s) {
+	-webkit-transition: all @duration @delay;
+	-moz-transition: all @duration @delay;
+	-o-transition: all @duration @delay;
+	-ms-transition: all @duration @delay;
+	transition: all @duration @delay;
+}
+
+.fade{
+	.transition(0.3s, 0.1s);
+}
+
+body
+ {
+	background: #000 url('../res/img/office.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
+	margin: 0;
+	text-align:left;
+	font-family: @titlefont;
+	min-height:100%;
+}
+
+
+
+#content {
+	min-height:400px;
+	max-width:840px;
+	margin:0 auto;
+	padding-top:25px;
+	padding-bottom:25px;
+	color:#aaa;
+	font-family:@mainfont;
+	font-size:15px;
+/*	p {
+		color:#aaa;
+		font-family:@mainfont;
+		font-size:15px;
+	}*/
+}
+
+footer {			
+	font-family:@mainfont;
+	font-size: 10px;
+	color: @grey;
+	/*position:fixed;*/
+	width:100%;					
+	bottom:0px;
+	text-align: center;
+	p {
+		margin-top:0;
+	}
+}
+
+a{	
+	text-decoration: none;
+	color:inherit;
+	border-bottom:1px dotted;
+	.transition(0.3s, 0.1s);
+	&:visited{
+		color:inherit;
+	}
+	&:hover{
+		color:@blue;
+		border-bottom:1px dotted;
+	}
+}
+
+h1, h2, h3, h4 {
+	font-family: @titlefont;
+	color:@blue;
+}
+
+h1 {
+	margin-left:-40px;
+	padding-left:40px;
+	margin-right:-40px;
+	padding-right:40px;
+	padding-bottom:10px;
+	border-bottom:1px dotted #888;
+	/*padding-top:10px;
+	border-top:1px dotted #888;*/
+
+	&#herotext {
+		font-size:80px;
+		margin: 0 auto;
+		margin-top: 20%;
+		text-shadow: 0px 2px 3px #000;
+		font-weight:700;
+		text-align:center;
+		padding:0;
+		border:none;
+	}
+
+	&#sitetitle {
+		color:@grey;
+		margin:0 auto;
+		padding:0;
+		border:none;
+		font-size:inherit;
+		font-weight: 400;
+		text-align:center;
+	}
+}
+
+strong{
+	font-weight:normal;
+	color:@green;
+}
+.grey {
+	color: @grey;
+}
+
+.green {
+	color: @green;
+}
+
+.blue {
+	color:@blue;
+}
+.greyhover:hover {
+	color: @grey;
+}
+
+.greenhover:hover {
+	color: @green;
+}
+
+.bluehover:hover {
+	color:@blue;
+}
+
+header {
+	border-bottom:solid 3px @blue;
+	position: fixed;
+	top:0px;
+	/*height:25px;
+	padding-top:25px;*/
+	width:100%;
+	background: #ddd url('../rdes/img/office_light.png');
+	background: rgba(231,231,231,0.9); // This replaces it with a semi-transparent bg
+	background-repeat: repeat;
+	box-shadow: 0 0 2px 3px #000;
+	line-height: 25px;
+	color:@grey;
+	font-size:15px;
+	font-weight:300;
+	.transition(0.5s, 0.1s);
+	&:hover{
+		border-bottom-color: @green;
+		background: rgb(231,231,231);
+		top:0;
+	}
+}
+
+nav{
+	a{
+		border-bottom:none;
+	}
+	ul{
+		list-style-type: none;
+		margin:0;
+		position:absolute;
+		top:0px;
+		left:0px;
+		li{
+			float:left;
+			margin: 0;
+			margin-right:10px;
+		}
+	}
+}
