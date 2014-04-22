@@ -519,10 +519,12 @@ blockquote .blockquote-source:before {
 
 #homebutton svg {
   height:1.6rem;
+  width:1.6rem;
 }
 
 #homebutton:hover{
   transform: scale(1.5);
+  -webkit-transform: scale(1.5);
 }
 
 #homebutton span {
