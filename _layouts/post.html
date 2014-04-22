@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="header">
-	<div id="homebutton" title="Go Back Home"><a href="/"><svg viewBox="0 0 512 512"	><path id="homebutton-path" d="M512,304l-96-96V64h-64v80l-96-96L0,304v16h64v160h160v-96h64v96h160V320h64V304z"/></svg><span>Home</span></a></div>
+	<div id="homebutton" title="Go Back Home"><a href="/">{% include 'icons/home.svg' %}<span>Home</span></a></div>
 	<h1>{{ page.title }}</h1>
 	<h2 class="meta">{{ page.date | date_to_string }}</h2>
 </div>

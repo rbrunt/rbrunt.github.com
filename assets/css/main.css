@@ -513,17 +513,19 @@ blockquote .blockquote-source:before {
 #homebutton {
   position: absolute;
   top: 0.6em;
+  width:1.6rem;
   margin-left: -3em;
-  transition: transform 0.2s;
-  -webkit-transition: -webkit-transform 0.2s;
 }
 
 #homebutton svg {
   height:1.6rem;
-  width:1.6rem;
+  width:100%;
+  margin-bottom:1em;
+  transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
 }
 
-#homebutton:hover{
+#homebutton svg#a:hover{
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
 }
@@ -532,8 +534,16 @@ blockquote .blockquote-source:before {
   display: none;
 }
 
-#homebutton-path {
+#homebutton path {
   fill: #ED9F18;
+}
+
+#homebutton svg#downchevron {
+  height: 0.5rem;
+}
+
+#homebutton svg#downchevron path {
+  fill: #666;
 }
 
 a {
@@ -601,6 +611,9 @@ h1 span, h2 span, h3 span {
     margin-right: 1em;
     margin-left: 1em;
     margin-top: 0.67em;
+  }
+  #homebutton svg:not(:first-child) {
+    display: none;
   }
 }
 
