@@ -515,6 +515,7 @@ blockquote .blockquote-source:before {
   top: 0.6em;
   margin-left: -3em;
   transition: transform 0.2s;
+  -webkit-transition: -webkit-transform 0.2s;
 }
 
 #homebutton svg {
