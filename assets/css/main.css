@@ -442,6 +442,14 @@ header {
   position: relative;
 }
 
+.mugshot {
+  width:10rem;
+  border-radius: 0.5em;
+  position:absolute;
+  right:100%; 
+  margin-right: 1em;
+}
+
 ::selection{
   background: #ED9F18;
   color: #666;
