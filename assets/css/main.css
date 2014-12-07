@@ -611,6 +611,9 @@ h1 span, h2 span, h3 span {
   .container {
     padding: 0 10px;
   }
+  body {
+    font-size:80%;
+  }
 }
 
 @media (max-width: 780px) {
