@@ -7,21 +7,154 @@ svg: <svg viewBox="0 0 512 512"><path d="m180.44,0c-14.423,0-26.031,11.64-26.031
 
 <p>Sometimes I take photos. Here are some of the photos I've taken in the past. I hope you like them.</p>
 <p>You can find more of them on <a href="http://www.flickr.com/photos/rbrunt/" target="_blank">my Flickr account</a></p>
+
+<div class="gallery">
+
+</div>
+<link rel="stylesheet" href="/assets/css/photoswipe.css">
+<link rel="stylesheet" href="/assets/css/default-skin/default-skin.css">
+<script src="/assets/js/photoswipe.js"></script>
+<script src="/assets/js/photoswipe-ui-default.js"></script>
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <div class="pswp__container">
+            <!-- don't modify these 3 pswp__item elements, data is added later on -->
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+</div>
+<div id="photoscontainer"></div>
+<script>
+var pswpElement = document.querySelectorAll(".pswp")[0];
+var gallery, photos;
+var photosContainer = document.getElementById("photoscontainer");
+//var flickrUrl = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157656935162216&api_key=abd85d6e27519002eb79122ec82d48bb&format=json&extras=url_t,url_z,url_k";
+
+Object.prototype.renameProperty = function (oldName, newName) {
+    // Check for the old property name to avoid a ReferenceError in strict mode.
+    if (this.hasOwnProperty(oldName)) {
+        this[newName] = this[oldName];
+        delete this[oldName];
+    }
+    return this;
+};
+
+function thumbnailClick(e) {
+    e.preventDefault();
+    var clickTarget = e.target || e.srcElement;
+
+    var clickedLink = clickTarget.parentNode;
+    var index = clickedLink.getAttribute("data-index");
+    //console.log(clickedLink.getAttribute("data-index"));
+    var options = {
+        history: false,
+        getThumbBoundsFn: function(i) {
+                var thumbnail = document.querySelectorAll("#photoscontainer a")[i].getElementsByTagName('img')[0],
+                    pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                    rect = thumbnail.getBoundingClientRect();
+
+                return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+            },
+        index: index,
+    }
+    gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, photos, options);
+    gallery.init();
+}
+
+function jsonFlickrApi(response) {
+	photos = response.photoset.photo;
+	photos.forEach(function(element,index,array) { // rename object keys...
+	 	// want src, w, h, msrc, title...
+	 	// from: url_k, width_k, height_k, url_t, title
+        if (element.hasOwnProperty("url_k")) {
+            element.renameProperty("url_k", "src");
+    	 	element.renameProperty("width_k", "w");
+    	 	element.renameProperty("height_k", "h");
+        } else {
+            element.renameProperty("url_z", "src");
+    	 	element.renameProperty("width_z", "w");
+    	 	element.renameProperty("height_z", "h");
+        }
+
+	 	//element.renameProperty("url_t", "msrc");
+        element.renameProperty("url_n", "msrc");
+        var linkel = document.createElement("a");
+        linkel.setAttribute("href", element.src);
+        linkel.setAttribute("title",element.title);
+        linkel.setAttribute("data-index", index);
+        linkel.addEventListener("click", thumbnailClick);
+
+        var imgel = document.createElement("img");
+        imgel.setAttribute("src", element.msrc);
+
+        document.getElementById("photoscontainer").appendChild(linkel).appendChild(imgel);
+	});
+    console.log(photos);
+	var options = {
+		history: false
+	};
+	//gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, photos, options );
+	//gallery.init();
+}
+
+</script>
+<script src="https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157656935162216&api_key=abd85d6e27519002eb79122ec82d48bb&format=json&extras=url_t,url_z,url_n,url_c,url_k"></script>
+
+
 <a href="https://www.flickr.com/photos/rbrunt/7764742900" title="Chicken 1 by Richard Brunt, on Flickr"><img src="https://farm9.staticflickr.com/8281/7764742900_944178e9cf_b.jpg" alt="Chicken 1"></a>
-<a href="https://www.flickr.com/photos/rbrunt/13191244023" title="Old Water Pumping Station by Richard Brunt, on Flickr"><img src="https://farm3.staticflickr.com/2861/13191244023_37edd4b299_b.jpg" alt="Old Water Pumping Station"></a>
-<a href="https://www.flickr.com/photos/rbrunt/13191245105" title="&quot;Solar Equation&quot; by Richard Brunt, on Flickr"><img src="https://farm8.staticflickr.com/7274/13191245105_41286012a6_b.jpg" alt="&quot;Solar Equation&quot;"></a>
-<a href="https://www.flickr.com/photos/rbrunt/13191524224" title="Framwelegate Bridge at Night by Richard Brunt, on Flickr"><img src="https://farm3.staticflickr.com/2377/13191524224_d4b9412623_b.jpg" alt="Framwelegate Bridge at Night"></a>
-<a href="https://www.flickr.com/photos/rbrunt/12560795603" title="Derwnant Water by Richard Brunt, on Flickr"><img src="https://farm8.staticflickr.com/7444/12560795603_99b3193d3a_b.jpg" alt="Derwnant Water"></a>
-<a href="https://www.flickr.com/photos/rbrunt/6356008409" title="&quot;Rainbow&quot; - Deadgood Studio by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6219/6356008409_09ee1a75b4_b.jpg" alt="&quot;Rainbow&quot; - Deadgood Studio"></a>
-<a href="https://www.flickr.com/photos/rbrunt/6254594512" title="Durham Cathedral at Night by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6233/6254594512_45eaf86119_b.jpg" alt="Durham Cathedral at Night"></a>
-<a href="https://www.flickr.com/photos/rbrunt/6264045932" title="Down the Bailey by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6095/6264045932_abf4d37578_b.jpg" alt="Down the Bailey"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985766246" title="Hammock by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6122/5985766246_0664e86c31_b.jpg" alt="Hammock"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985195993" title="Butterfly 2 by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6009/5985195993_03bb177c2c_b.jpg" alt="Butterfly 2"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985760018" title="Leaf by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6030/5985760018_c5f1a0b867_b.jpg" alt="Leaf"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985192451" title="So Close! by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6148/5985192451_08aaf5fc6b_b.jpg" alt="So Close!"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985191199" title="Pineapples by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6030/5985191199_750b9c8082_b.jpg" alt="Pineapples"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985188309" title="Mt Kinabalu by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6129/5985188309_9c41a37634_b.jpg" alt="Mt Kinabalu"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985183443" title="Goose by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6138/5985183443_37da27874a_b.jpg" alt="Goose"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985746504" title="Tower by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6024/5985746504_a02ac0d7f7_b.jpg" alt="Tower"></a>
-<a href="https://www.flickr.com/photos/rbrunt/5985747366" title="Saxaphone by Richard Brunt, on Flickr"><img src="https://farm7.staticflickr.com/6147/5985747366_1706c105ba_b.jpg" alt="Saxaphone"></a>
-<a href="https://www.flickr.com/photos/rbrunt/3288640600" title="Set for Tea by Richard Brunt, on Flickr"><img src="https://farm4.staticflickr.com/3632/3288640600_b106fb162f_b.jpg" alt="Set for Tea"></a>
