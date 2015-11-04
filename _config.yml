@@ -2,3 +2,6 @@ name: richardbrunt.co.uk
 markdown: redcarpet
 pygments: true
 permalink: pretty
+
+prose:
+	siteurl: "http://richardbrunt.co.uk
