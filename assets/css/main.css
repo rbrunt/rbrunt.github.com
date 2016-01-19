@@ -564,6 +564,12 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus{
+    background: #4678EF;
+    outline: 5px solid #4678EF;
+    color: white;
+}
+
 p {
   line-height: 1.7;
 }
