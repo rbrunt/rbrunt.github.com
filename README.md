@@ -20,3 +20,4 @@ This is the source code to my personal site [richardbrunt.co.uk](http://richardb
 - https://www.11ty.dev/ as a framework?
 - https://tailwindcss.com/
     - https://daisyui.com/ 
+- netlify for deployments / builds? OR Githiub actions? Does that work with GH Pages?
