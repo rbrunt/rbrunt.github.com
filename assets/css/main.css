@@ -595,6 +595,10 @@ h1 span, h2 span, h3 span {
   color: #ED9F18;
 }
 
+.text-orange {
+  color: #ED9F18
+}
+
 .container {
   margin: 0 auto;
   max-width: 34rem;
@@ -611,10 +615,6 @@ h1 span, h2 span, h3 span {
   font-style: italic;
   font-size: 0.8em;
   color: #666;
-}
-
-.text-orange {
-  color: #ED9F18
 }
 
 @media (max-width: 1140px) {
