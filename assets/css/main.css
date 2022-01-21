@@ -37,7 +37,7 @@ h1 {
 
 ::selection {
   background: var(--orange-color);
-  color: #666;
+  color: #fff;
 }
 
 ::-moz-selection {
@@ -214,7 +214,7 @@ h3 span {
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --orange-color: hsl(38, 86%, 51%);
+    --orange-color: #ed9f18;
   }
 
   html {
