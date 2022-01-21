@@ -434,7 +434,7 @@ th {
 }
 
 html {
-  font-size: 125%;
+  font-size: 20px;
   font-family: Open Sans, sans-serif !important;
 }
 
@@ -444,7 +444,7 @@ header {
 
 .mugshot {
   width:10rem;
-  border-radius: 0.5em;
+  border-radius: 0.8rem;
   position:absolute;
   right:100%;
   top:0;
@@ -521,9 +521,9 @@ blockquote .blockquote-source:before {
 
 #homebutton {
   position: absolute;
-  top: 0.6em;
+  top: 0.6rem;
   width:1.6rem;
-  margin-left: -3em;
+  margin-left: -3rem;
 }
 
 #homebutton svg {
@@ -596,8 +596,8 @@ h1 span, h2 span, h3 span {
 }
 
 .container {
-  margin:0 auto;
-  max-width: 680px;
+  margin: 0 auto;
+  max-width: 34rem;
   position: relative;
 }
 
@@ -612,6 +612,25 @@ h1 span, h2 span, h3 span {
   font-size: 0.8em;
   color: #666;
 }
+
+.text-orange {
+  color: #ED9F18
+}
+
+@media (max-width: 1140px) {
+ .container-homepage {
+   margin-left: 12rem;
+ }
+}
+
+@media (max-width: 580px) {
+ .mugshot {
+    visibility: hidden;
+  }
+  .container {
+    margin: 0;
+  }
+} 
 
 @media (max-width: 680px) {
   .container {
