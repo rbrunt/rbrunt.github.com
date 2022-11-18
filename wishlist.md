@@ -14,4 +14,19 @@ I have an [Amazon wishlist](https://www.amazon.co.uk/hz/wishlist/ls/2QD2WOYDBNCP
 I don't really like that many 'things', so consumables are always appreciated:
 
 - I like coffee, particularly the coffee from [Missing Bean](https://www.themissingbean.co.uk/collections/coffee) in Oxford, but any specialty coffee would be very appreciated. I have a grinder, so beans are preferable.
-- I like Whisky, particularly bourbon and Islay single malt.
+- I like whisky, particularly bourbon and Islay single malt.
+- I like thrillers: you could buy me a book.
+- I like photography, so canvas prints of my photos (or vouchers to do that).
+
+# Ashley's Wishlist
+
+Here are a few things that Ashley would like:
+
+- Ashley has an [Amazon Wishlist](https://www.amazon.co.uk/hz/wishlist/ls/15QYX7Q2ET1ZR?ref_=wl_share) too.
+- Ashley wants a 'cozy' bath robe.
+- Ashley would like [this rug from Dunelm](https://www.dunelm.com/product/geo-metallic-rug-1000194779?colour=Peacock&defaultSkuId=30752789&rugSize=120cm+x+170cm+%284ft+x+5.5ft%29) (size: 4ft x 5.5ft).
+- Ashley likes tea from [Whittard's](https://www.whittard.co.uk/).
+
+# Other Ideas
+
+- Vouchers to do something a bit 'special' together (like money towards a meal out in Oxford) always go down well.
