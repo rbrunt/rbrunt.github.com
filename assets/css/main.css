@@ -129,7 +129,7 @@ p {
 
 img {
   max-width: 100%;
-  transition: all 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 a img:hover {
