@@ -11,11 +11,11 @@ I have an [Amazon wishlist](https://www.amazon.co.uk/hz/wishlist/ls/2QD2WOYDBNCP
 
 ## Things that aren't on Amazon
 
-I don't really like that many 'things', so consumables are always appreciated:
+I don't really like that many 'things', and a lot of things that I do like aren't on Amazon. Here's a few ideas:
 
 - I like coffee, particularly the coffee from [Missing Bean](https://www.themissingbean.co.uk/collections/coffee) in Oxford, but any specialty coffee would be very appreciated. I have a grinder, so beans are preferable.
 - I like whisky, particularly bourbon and Islay single malt.
-- I like thrillers: you could buy me a book.
+- You could buy me a book: I like thrillers, sci-fi and non-fiction books (especially history of science).
 - I like photography, so canvas prints of my photos (or vouchers to do that).
 
 # Ashley's Wishlist
