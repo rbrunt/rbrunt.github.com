@@ -22,7 +22,11 @@ Here are a few things that Ashley would like:
 - Ashley has an [Amazon Wishlist](https://www.amazon.co.uk/hz/wishlist/ls/15QYX7Q2ET1ZR?ref_=wl_share) too.
 - Ashley wants a 'cozy' bath robe.
 - Ashley would like [this rug from Dunelm](https://www.dunelm.com/product/geo-metallic-rug-1000194779?colour=Peacock&defaultSkuId=30752789&rugSize=120cm+x+170cm+%284ft+x+5.5ft%29) (size: 4ft x 5.5ft).
-- Ashley likes tea from [Whittard's](https://www.whittard.co.uk/).
+- Ashley likes tea from [Whittard's](https://www.whittard.co.uk/). She particularly likes:
+    - [Mango and Bergamot](https://www.whittard.co.uk/tea/tea-type/green-tea/mango-bergamot-loose-tea-MSTR314658.html)
+    - [Vanilla Honeybush & Orange](https://www.whittard.co.uk/tea/vanilla-honeybush-and-orange-infusion-MSTR354233.html)
+    - [Regal Blend loose tea](https://www.whittard.co.uk/tea/tea-type/black-tea/regal-blend-loose-tea-MSTR314609.html)
+    - [Peppermint & Liquorice Loose Infusion](https://www.whittard.co.uk/tea/peppermint-liquorice-loose-infusion-MSTR354217.html)
 
 ## Other Ideas
 
