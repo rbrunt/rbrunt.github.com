@@ -9,8 +9,8 @@ This page has a few ideas for family looking for ideas about what we might like 
 
 ## Richard's Wishlist
 
-- I have an [Amazon wishlist](https://www.amazon.co.uk/hz/wishlist/ls/2QD2WOYDBNCPQ?ref_=wl_share) that I try to keep up to date with things I'd like.
-- I like coffee, particularly the coffee from [Missing Bean](https://www.themissingbean.co.uk/collections/coffee) in Oxford, but any specialty coffee would be very appreciated. I have a grinder, so beans are preferable.
+- I have an Amazon Wishlist ([UK](https://www.amazon.co.uk/hz/wishlist/ls/2QD2WOYDBNCPQ?ref_=wl_share) / [US](https://www.amazon.com/hz/wishlist/ls/2J21GDVBO24S6?ref_=wl_share)) that I try to keep up to date with things I'd like.
+- I like specialty coffee. I have a grinder, so beans are preferable.
 - I like whisky, particularly bourbon and Islay single malt.
 - You could buy me a book: I like thrillers, sci-fi and non-fiction books (especially history of science).
 - I like photography, so canvas prints of my photos (or vouchers to do that).
@@ -19,8 +19,8 @@ This page has a few ideas for family looking for ideas about what we might like 
 
 Here are a few things that Ashley would like:
 
-- Ashley has an [Amazon Wishlist](https://www.amazon.co.uk/hz/wishlist/ls/15QYX7Q2ET1ZR?ref_=wl_share) which is normally up-to-date with ideas.
-- [This rug from Dunelm](https://www.dunelm.com/product/geo-metallic-rug-1000194779?colour=Peacock&defaultSkuId=30752789&rugSize=120cm+x+170cm+%284ft+x+5.5ft%29) (size: 4ft x 5.5ft).
+- Ashley has an Amazon Wishlist ([UK](https://www.amazon.co.uk/hz/wishlist/ls/15QYX7Q2ET1ZR?ref_=wl_share) / [US](https://www.amazon.com/hz/wishlist/ls/VCE7SKQ1WBBT?ref_=wl_share)) which is normally up-to-date with ideas.
+- Some Dungarees / overalls from [Lucy & Yak](https://lucyandyak.com/products/original-organic-cotton-dungarees-maroon?variant=39358815469671) (Maroon, black, or lazy daisy in size UK10/US6).
 - Tea from [Whittard's](https://www.whittard.co.uk/). She particularly likes:
     - [Mango and Bergamot](https://www.whittard.co.uk/tea/tea-type/green-tea/mango-bergamot-loose-tea-MSTR314658.html)
     - [Vanilla Honeybush & Orange](https://www.whittard.co.uk/tea/vanilla-honeybush-and-orange-infusion-MSTR354233.html)
