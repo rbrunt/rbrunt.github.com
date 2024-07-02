@@ -15,8 +15,7 @@ This blog post will discuss my experiences of using EphemeralMongo to unit test 
 
 [Aggregation Pipelines](https://www.mongodb.com/docs/manual/core/aggregation-pipeline/){:target="_blank"} are a great way to combine information from multiple documents or even documents from different collections inside a mongo database. Offloading those operations to the database makes sense: running data intensive operations close to where the data resides improves both application responsiveness and overall resource usage. Rather than pulling all those disparate entities down into your application over several individual calls, why not send the database a list of instructions and let it return just the information you need?
 
-Aggregation pipelines are often used in batch jobs to summarise data in a database, but they’re also often used for more mundane aggregations. In one system, aggregation pipelines were used to summarise a series of events into the current state of an entity, and in another, they encapsulate business logic around duplicate record detection and running searches. In both cases these aggregation pipelines are defined in C# backend code but they’re really just data structures we send to the database for execution, much like a SQL query. This means that they’re not executed by the .NET runtime, and so we can’t ‘just’ test them with a normal unit test.
-
+Aggregation pipelines are often used in batch jobs to summarise data in a database, but they’re also often used for more mundane aggregations. In one system, aggregation pipelines might be used to summarise a series of events into the current state of an entity, and in another, they could encapsulate business logic around duplicate record detection and running searches. In both cases these aggregation pipelines are defined in C# backend code but they’re really just data structures we send to the database for execution, much like a SQL query. This means that they’re not executed by the .NET runtime, and so we can’t ‘just’ test them with a normal unit test.
 
 Aggregation pipelines can be defined using LINQ syntax…
 
@@ -77,7 +76,6 @@ These are great features, but they have two major shortcomings: Firstly, though 
 
 Together, this makes Compass a great tool for building your pipeline definition from the start or for adhoc testing against real data, but it’s not set up for the quick, highly targetted and repeatable testing that unit tests excel at.
 
-
 ## How does EphemeralMongo help when testing aggregation pipelines?
 
 EphemeralMongo is a set of NuGet packages that allow you to spin up ephemeral, isolated MongoDB databases for testing. The package includes the full MongoDB executable, so you’re running a real Mongo instance for your tests rather than just an approximation. It supports a wide range of .NET framework and .NET core versions, and getting it integrated into your existing unit test infrastructure is really simple.
@@ -92,13 +90,12 @@ Hopefully you’re now sold enough on EphemeralMongo to want to integrate it int
 
 First, we need to install the NuGet Package into our test project: [check the Downloads section](https://github.com/asimmon/ephemeral-mongo#downloads) for a link to the nuget package for your version of mongo, but we’ll be using EphemeralMongo6 (which targets MongoDB 6.0.7) in this example: https://www.nuget.org/packages/EphemeralMongo6/
 
-
 Once our nuget package is installed, we need to wire up our setup logic so that we can create our mongo instance for our tests. We want a single mongo instance per test run, shared across all the tests (so that we don’t use up lots of resources on the computer), but we’ll run each test in its own isolated mongo database so that we know that they’re independent.
 
 There are [a few ways of sharing context between tests in xUnit](https://xunit.net/docs/shared-context), but the method we want is the ‘Collection Fixtures’ method. This allows a single database fixture to be shared across all our test classes, rather than creating a new instance per class or per test. To do this, we need to create a new class in our test project to do this wiring:
 
 ```c#
-// From: MongoDatabaseFixture.cs
+// MongoDatabaseFixture.cs
 using EphemeralMongo;
 using Xunit;
 
@@ -132,7 +129,7 @@ public class MongoDatabaseCollection : ICollectionFixture<MongoDatabaseFixture>
 }
 ```
 
-Here, our fixture handles the creation and destruction of the ephemeral mongo database, and we have a separate utility class to attach our CollectionDefinition to.
+Here, our fixture handles the creation and destruction of the ephemeral mongo database, and we have a separate utility class to attach our `CollectionDefinition` to.
 
 Now, whenever we want to write a test against our mongo database we just need to add the `[Collection("Mongo Database Tests")]` attribute to the class and a parameter in the constructor to take the test fixture (so we can actually access the database!), and xUnit will sort the rest out.
 
@@ -169,7 +166,7 @@ public class SomeMongoPipelineTests
 }
 ```
 
-If you have some large or complex data to import into the database, you would probably want to hook that into the constructor too: EphemeralMongo provides an `Import()` method that takes json file paths as an input and will bulk insert data into your collection.
+If you have some large or complex data to import into the database, you would probably want to hook that into the constructor too: EphemeralMongo provides an `Import()` method for this which takes json file paths as an input and will bulk insert data into your collection.
 
 Now we’ve done all our setup, we’re ready to write some tests! In my case, I ended up moving a lot of that boilerplate code to a base class, which all my test classes inherit from, just so that I don’t have to copy it out every time, then I just went about writing my tests as I usually would. The result is refreshingly boring:
 
