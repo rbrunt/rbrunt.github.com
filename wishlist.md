@@ -7,7 +7,7 @@ svg: <svg viewBox="0 0 512 512"><path d="M 255.99998,109.22597 C 215.49728,4.475
 
 This page has a few ideas for family looking for ideas about what we might like for Christmas / Birthday.
 
-## Richard's Wishlist
+## Richard&apos;s Wishlist
 
 - I have an Amazon Wishlist ([UK](https://www.amazon.co.uk/hz/wishlist/ls/2QD2WOYDBNCPQ?ref_=wl_share) / [US](https://www.amazon.com/hz/wishlist/ls/2J21GDVBO24S6?ref_=wl_share)) that I try to keep up to date with things I'd like.
 - I like specialty coffee. I have a grinder, so beans are preferable.
@@ -15,7 +15,7 @@ This page has a few ideas for family looking for ideas about what we might like 
 - You could buy me a book: I like thrillers, sci-fi and non-fiction books (especially history of science).
 - I like photography, so canvas prints of my photos (or vouchers to do that).
 
-## Ashley's Wishlist
+## Ashley&apos;s Wishlist
 
 Here are a few things that Ashley would like:
 
