@@ -9,7 +9,7 @@ Recently while working on a project at work, I wanted to test if the aggregation
 
 In this situation, we would normally want to write unit tests to carefully probe these edge cases and adjust the code we’ve written until it behaves as we expect. This is trivial when the code you want to test is in your backend:  you just write a new test in your test suite. It wasn’t so easy in this case though: although the mongo aggregation pipeline was _defined_ in our .NET code (in the form of a `BSONDocument` object) it was actually being _executed_ on the database, meaning we couldn’t put it under test using the existing testing infrastructure. This led me to investigating various options for unit testing aggregation pipelines, which eventually led me to the [EphemeralMongo](https://github.com/asimmon/ephemeral-mongo){:target="_blank"} project.
 
-This blog post will discuss my experiences of using EphemeralMongo to unit test a .NET API, and hopefully point you in the right direction if you’re interested in implementing something similar in your .NET code.
+This blog post will discuss my experiences of using EphemeralMongo to unit test an ASP.NET Core REST API, and hopefully point you in the right direction if you’re interested in implementing something similar in your .NET code.
 
 ## The Problem
 
