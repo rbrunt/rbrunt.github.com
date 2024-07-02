@@ -2,11 +2,8 @@
 layout: default
 ---
 
-<div class="header">
-	<div id="homebutton" title="Go Back Home"><a href="/">{% include 'icons/home.svg' %}<span>Home</span></a></div>
+<article role="main">
 	<h1>{{ page.title }}</h1>
-	<h2 class="meta">{{ page.date | date_to_string }}</h2>
-</div>
-<div role="main">
+	<span class="post-metadata">{{ page.date | date: "%d %B %Y" }} ({{ content | reading_time}})</span>
 	{{ content }}
-</div>
+</article>
