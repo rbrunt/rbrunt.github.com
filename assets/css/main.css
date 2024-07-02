@@ -152,7 +152,6 @@ nav.page-navigation .home-link {
 }
 
 nav.page-navigation  .home-link  a {
-  color: #444;
   color: black;
 }
 
@@ -221,6 +220,10 @@ nav.page-navigation li {
     color: #ddd;
   }
 
+  nav.page-navigation  .home-link  a {
+  color: white;
+}
+  
   .footer-text {
     color: #777;
   }
