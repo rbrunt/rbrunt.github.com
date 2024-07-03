@@ -3,9 +3,9 @@ permalink: /:categories/:title/
 author: Richard Brunt
 plugins:
   - jekyll-feed
-# feed:
-#   categories:
-#     - blog
+feed:
+  categories:
+    - blog
 #   posts_limit: 10
 #   excerpt_only: true
 prose:
