@@ -209,6 +209,12 @@ nav.page-navigation li {
   
 }
 
+@media print {
+  body {background: white; color: black;}
+  nav ul { display: none;}
+  a:not(nav.page-navigation .home-link a) { color: inherit; text-decoration: underline;}
+}
+
 @media (prefers-color-scheme: dark) {
 
   :root {
