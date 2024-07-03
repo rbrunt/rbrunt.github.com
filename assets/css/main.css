@@ -79,7 +79,7 @@ a:hover {
 a:focus {
   background: #4678ef;
   outline: 5px solid #4678ef;
-  color: white;
+  color: white !important;
 }
 
 p {
