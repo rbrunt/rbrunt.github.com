@@ -1,5 +1,8 @@
 :root {
   --orange-color: #ed9f18;
+  --col-orange-1: hsl(38, 86%, 97%);
+  --col-orange-3: #ed9f18;
+  --col-orange-5: hsl(38, 86%, 16%);
 }
 
 * {
@@ -11,6 +14,11 @@
 html {
   font-size: 100%;
   font-family: Open Sans, sans-serif !important;
+}
+
+body {
+  background: var(--col-orange-1);
+  color: var(--col-orange-5);
 }
 
 header {
@@ -153,7 +161,7 @@ nav.page-navigation .home-link {
 }
 
 nav.page-navigation  .home-link  a {
-  color: black;
+  color: var(--col-orange-5);
 }
 
 nav.page-navigation ul {
@@ -222,9 +230,9 @@ nav.page-navigation li {
     --orange-color: #ed9f18;
   }
 
-  html {
+  body {
     background: #333;
-    color: #ddd;
+    color: var(--col-orange-1);
   }
 
   nav.page-navigation  .home-link  a {
