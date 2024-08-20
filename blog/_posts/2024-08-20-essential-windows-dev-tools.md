@@ -31,12 +31,12 @@ This is my go-to theme at the moment.
 
 #### [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
 
-I mostly use [draw.io](https://diagrams.net) for diagramming. This extension is greate because I can save e.g. a `.drawio.png` file that renders the diagram as a `.png` when viewing documentation in a browser, but still contains an embedded editable diagram hidden inside. 
+I mostly use [draw.io](https://diagrams.net) for diagramming. This extension is great because I can save e.g. a `.drawio.png` file that renders the diagram as a `.png` when viewing documentation in a browser, but still contains an embedded editable diagram hidden inside. 
 
 This extension lets me open the diagram in vscode while editing my documentation, and make changes that are instantly rendered. Removing as much friction as possible in editing the diagrams while editing documentatoin means that it's much more likely to stay in sync with the words around it. I love it!
 
 #### [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-I have VSCode set to automatically format on save for most file types, and use Prettier for most frontend code. For backend code, I tend to use a language specific one, like [black](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Python.
+I have VSCode set to automatically format on save for most file types, and use Prettier for most frontend code. For backend code, I tend to use a language specific formatter, like [black](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Python.
 
 I like using a code formatter because it means I never have to make a decision about how to format code. I just press save and get consistently formatted code which I find much more scannable. I know not everyone likes this loss of control, but for me the "I don't have to care about this" aspect is a big win.
 
@@ -57,7 +57,7 @@ My theme for Oh My Posh is still something I'm tinkering with (I only changed fr
 
 While I can get by with classic git command line commands if I need to, I find a UI much nicer for day-to-day work: it gives you more situational awareness than the output of a single git command, and for common tasks like adding some but not all changes to a commit, I find it much faster.
 
-I used to swear by GitKraken for my git client needs. GitKraken is super powerful, but can be super slow. A couple of years ago I discovered [Lazygit](https://github.com/jesseduffield/lazygit), and I've never looked back.
+I used to swear by GitKraken for my git client needs. GitKraken is super powerful, but can be super slow. A couple of years ago I discovered [Lazygit](https://github.com/jesseduffield/lazygit), and I've never looked back. It's a terminal UI so runs at the command line, but it's a fully interactive UI with panels for your branches and commit history. It even has mouse support!
 
 Lazygit has the benefits of a git GUI, but the productivity benefits of a primarly keyboard driven program, plus it's really fast!
 
