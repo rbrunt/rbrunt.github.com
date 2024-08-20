@@ -21,7 +21,7 @@ It also works well for backend things (e.g. it has decent C# support), but I usu
 
 ### VSCode Extensions
 
-I try not to have too many extensions installed on my VSCode install at a given time, but here are a few that I always install. There are a few othersformamagine are very common, but these are my top 4:
+I try not to have too many extensions installed on my VSCode install at a given time, but here are a few that I always install. There are a few others that I imagine are very common, but these are my top 4:
 
 #### [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 If I need to fiddle with some data in a CSV file for something, then this extension makes reviewing or editing it a breeze.
