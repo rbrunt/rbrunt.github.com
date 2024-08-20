@@ -38,7 +38,7 @@ This extension lets me open the diagram in vscode while editing my documentation
 #### [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 I have VSCode set to automatically format on save for most file types, and use Prettier for most frontend code. For backend code, I tend to use a language specific one, like [black](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for Python.
 
-I like using a code formatters because it means I never have to make a decision about how to format code. I just press save and get consistently formatted code which I find much more scannable. I know not everyone likes this loss of control, but for me the "I don't have to care about this" aspect is a big win.
+I like using a code formatter because it means I never have to make a decision about how to format code. I just press save and get consistently formatted code which I find much more scannable. I know not everyone likes this loss of control, but for me the "I don't have to care about this" aspect is a big win.
 
 ## Oh My Posh
 
