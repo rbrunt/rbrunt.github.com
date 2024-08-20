@@ -16,8 +16,8 @@ Some of these tools are 'trendy', others are a bit niche. I'm sure that there ar
 ## Visual Studio Code
 
 [Visual Studio Code ](https://code.visualstudio.com/) is the ubiquitous text editor from Microsoft that can be used for almost any coding task.
-If I'm wrRemov anything for the frontend, it's almost always done in VSCode.
-It also works well for backend things (e.g. it has decent C# support), but I usually reach for a more heavyweight IDE for those langauges, as I find VSCode a bit slow and the refactorinitemNport less robust.
+If I'm writing anything for the frontend, it's almost always done in VSCode.
+It also works well for backend things (e.g. it has decent C# support), but I usually reach for a more heavyweight IDE for those langauges, as I find VSCode a bit slow and the refactoring support less robust.
 
 ### VSCode Extensions
 
