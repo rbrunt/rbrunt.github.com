@@ -1,0 +1,36 @@
+---
+layout: default
+title: Richard Brunt
+description: "The personal website of Richard Brunt, a Software Engineer from Oxford."
+published: true
+classes: container-homepage
+---
+
+<script lang="javascript">
+    function toggleAnalytics() {
+        const isDisabled = window.localStorage.getItem('umami.disabled') === '1';
+
+        if (isDisabled){
+            window.localStorage.removeItem('umami.disabled');
+        }
+        else {
+            window.localStorage.setItem('umami.disabled', '1');
+        }
+        updateAnalyticsStatusDisplay();
+    }
+
+    function updateAnalyticsStatusDisplay(){
+        const isDisabled = window.localStorage.getItem('umami.disabled') === '1';
+
+        document.getElementById('status').textContent = isDisabled ? 'out from' : 'in to';
+        document.getElementById('analyticsButton').textContent = isDisabled ? 'Opt In' : 'Opt Out';
+    }
+    window.addEventListener('load', () => updateAnalyticsStatusDisplay());    
+</script>
+
+<div role="main">
+    <h1>Analytics Settings</h1>
+
+    <p>You are currently opted <b id="status">checking...</b> analytics.<br>
+    <p><button onclick="toggleAnalytics()" id="analyticsButton">Opt Out</button></p>
+</div>
