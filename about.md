@@ -9,7 +9,7 @@ A few things about me:
 
 - I'm a [Christian](https://twowaystolive.com/){:target="_blank"}
 - I live in the beautiful city of Oxford, UK
-- I work as a Senior Software Engineer at [Nationwide Building Society](https://www.nationwide.co.uk/){:target="_blank"}
+- I work as a Senior Software Engineer at [Aurora Energy Research](https://auroraer.com/){:target="_blank"}
 - I like to take [photos](https://www.instagram.com/bruntrichard/){:target="_blank"}
 - Sometimes I also write [software projects](/projects) in my spare time
 
